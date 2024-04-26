@@ -14,7 +14,7 @@ jobs:
       id: njsscan
       uses: ajinabraham/njsscan-action@v5
       with:
-        args: '. --sarif --output results/results.sarif || true'
+        args: '. --sarif --output results.sarif || true'
     - name: List files in directory
       run: ls -la
     - name: upload report to github code scanning
